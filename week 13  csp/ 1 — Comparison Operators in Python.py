@@ -44,7 +44,9 @@ print(a <= b)   # checks for less than or equal to # True
 # where a student must check if their score is greater than or equal to 60 to pass a test.# The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"
 
 # asking student for the score
-score = int(input("what is your score?"))
+
+# score = int(input("what is your score?"))
+
 # make this program for all grading spectrums
 # if the score is between 90-100, you got an A
 # if the score is between 80-89, you got a B
@@ -54,22 +56,29 @@ score = int(input("what is your score?"))
 
 
 
-if score >= 90 and score <= 100:
-    print("You got an A!") 
-elif score >= 80 and score <= 89:
-    print("You got a B.")
-elif score >= 70 and score <= 79:
-    print("You got a C.")
-elif score >= 60 and score <= 69:
-    print("You got a D.")
-else:
-    print("You failed.")
+# if score >= 90 and score <= 100:
+#     print("You got an A!") 
+# elif score >= 80 and score <= 89:
+#     print("You got a B.")
+# elif score >= 70 and score <= 79:
+#     print("You got a C.")
+# elif score >= 60 and score <= 69:
+#     print("You got a D.")
+# else:
+#     print("You failed.")
 
 
-if score >= 60:
-    print("you passed the test")
-else:
-    print("you didn't pass the test")
+# if score >= 60:
+#     print("you passed the test")
+# else:
+#     print("you didn't pass the test")
 
+
+# The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"
 # ask for password
 password = input("what is your password? ")
+if len(password) >= 8 and any(char.isdigit() for char in password):
+    print("Password is valid.")
+else:
+    print("Password is invalid. " \
+    "It must be at least 8 characters long and contain at least one digit.")
