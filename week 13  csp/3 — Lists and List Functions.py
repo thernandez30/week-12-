@@ -87,33 +87,67 @@ print(my_list)
 # .sort() - sorts the list in ascending order
 # .reverse() - reverses the order of the list
 
-# Examples:
+# why is a list more useful than a variable?
+# A list can hold multiple values,
+# while a variable can only hold one variable at a time
 
-# my_list = ['apple', 'banana', 'cherry']
-# print(my_list[0])         # apple
-# print(my_list[1:])        # ['banana', 'cherry']
+cakes = ['chocolate', 'vanilla', 'red velvet', 'carrot']
+print(cakes)
+# access the first item
+print(cakes[0]) # chocolate
+# access the last item
+print(cakes[-1]) # carrot
+# want strawberry instead of vanilla
+cakes[0] = 'strawberry'
+print(cakes)
+# change second cake to lemon
+cakes[1] = 'lemon'
+print(cakes)
+# add a new cake to the end
+cakes.append('cherry')
+print(cakes)
+# remove last cake
+cakes.pop()
+print(cakes)
+# insert a new cake at index 2
+cakes.insert(2, 'funfetti')
+print(cakes)
+
+
+# Examples:
+my_list = ['apple', 'banana', 'cherry']
+#  print(my_list[0])         # apple
+#  print(my_list[1:])        # ['banana', 'cherry']
 
 # my_list.append('grape')
 # print(my_list)
 
-# my_list.pop(1)
-# print(my_list)
+my_list.pop(1)
+print(my_list)
 
-# numbers = [3, 1, 4, 2]
-# numbers.sort()
-# print(numbers)
+numbers = [3, 1, 4, 2]
+numbers.sort()
+print(numbers)
 
 
 # Practice Problems:
 
 # Create a list with 5 of your favorite foods.
 
+my_list2 = ['pizza', 'chicken', 'tacos', 'burger', 'sandwich']
+
 # Print the second and last item.
+print(my_list2[1])
+print(my_list2[4])
 
 # Add a new item using .append().
 
+my_list2.append('mac and cheese')
+print(my_list2)
+
 # Remove the first item using .pop(0).
-
+my_list2.pop(0)
+print(my_list2)
 # Reverse your list using .reverse().
-
-# Create a list of 3 lists (matrix), and access the middle element.
+my_list2.reverse()
+print(my_list2)
