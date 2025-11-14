@@ -134,20 +134,49 @@ print(numbers)
 
 # Create a list with 5 of your favorite foods.
 
-my_list2 = ['pizza', 'chicken', 'tacos', 'burger', 'sandwich']
+my_list2 = ['pizza', 'chicken', 'tacos', 'burgers', 'sandwich']
 
 # Print the second and last item.
 print(my_list2[1])
-print(my_list2[4])
+print(my_list2[-1])
 
 # Add a new item using .append().
-
 my_list2.append('mac and cheese')
 print(my_list2)
 
 # Remove the first item using .pop(0).
 my_list2.pop(0)
 print(my_list2)
+
 # Reverse your list using .reverse().
 my_list2.reverse()
 print(my_list2)
+
+
+# sets = {1, 2, 3}
+# sets are unordered collections of unique items
+# sets do not support indexing or slicing
+# sets are mutable, meaning you can add or remove items
+# sets are created using curly brackets {}
+my_set = {1, 2, 3, 4, 5}
+print(my_set)
+print(type(my_set))
+# add an item to the set
+my_set.add(6)
+print(my_set)
+# remove an item from the set
+my_set.remove(3)
+print(my_set)
+
+#check if an item is in the set
+print(4 in my_set)
+print(3 in my_set)
+
+# tupples are ordered collections of items
+# tupples are immutable, meaning you cannot modify them after creation
+# tupples are created using parentheses ()
+my_tupple = (1, 2, 3, 4, 5)
+print(my_tupple)
+print(type(my_tupple))
+print(my_tupple[0])
+print(my_tupple[1:4])
