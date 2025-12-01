@@ -15,6 +15,6 @@ elif temp >= 71 and temp <= 110:
     print("It's hot!")
 else:
     print("Extreme temperature warning!")
-If the temperature is out of range (below -10 or above 110), display “Extreme temperature warning!”
+# If the temperature is out of range (below -10 or above 110), display “Extreme temperature warning!”
 
 # Starter Code:
